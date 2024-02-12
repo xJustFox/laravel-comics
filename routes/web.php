@@ -17,5 +17,6 @@ Route::get('/', function () {
     $footerArr = config('footer_arr');
     $blueBar = config('blue_bar');
     $navLinks = config('nav_links');
-    return view('comics', compact('footerArr', 'blueBar', 'navLinks'));
+    $comics = config('comics');
+    return view('comics', compact('footerArr', 'blueBar', 'navLinks', 'comics'));
 });

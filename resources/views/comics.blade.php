@@ -24,7 +24,17 @@
             <div class="plate">CURRENT SERIES</div>
     
             <div class="my-row">
-                COMICS
+                @foreach ($comics as $comic)
+                    <div class="my-col">
+                        <div class="imgContainer">
+                            <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                        </div>
+                        <div class="price">{{$comic['price']}}</div>
+                        <div class="textComics">
+                            {{ $comic['series'] }}
+                        </div>
+                    </div>
+                @endforeach
             </div>
     
             <div class="text-center pt-4">
