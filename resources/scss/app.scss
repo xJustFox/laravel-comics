@@ -51,3 +51,64 @@ header{
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
 }
+
+footer{
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+
+    .content{
+        height: 450px;
+        padding: 50px 0;
+    }
+    .title{
+        cursor: default;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .infoItems{
+        text-decoration: none;
+        color: #878484fa;
+
+        &:hover{
+            color: #0282f9;
+            cursor: pointer;
+        }
+    }
+
+    .log-bg{
+        position: relative;
+        bottom: 30%;
+    }
+
+    .my-bg-black{
+        background-color: #303030;
+
+        .my-btn{
+            border: 2px solid #0282f9;
+            border-radius: 0;
+
+            &:hover{
+                transform:scale(1.1);
+            }
+        }
+
+        ul{
+            li:first-child{
+                cursor: default;
+                font-weight: bolder;
+                color: #0282f9;
+            }
+
+            li{
+               padding: 0 10px;
+           }
+
+           .socialIcon:hover{
+            transform: scale(1.1);
+           }
+
+        }
+    }
+}

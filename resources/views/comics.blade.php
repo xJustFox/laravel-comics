@@ -34,7 +34,7 @@
         <section class="shippingBanner">
             <div class="container">
                 <ul class="list-unstyled m-0  d-flex justify-content-around  p-5 flex-wrap">
-                    @foreach ($blueBar as $item)
+                    @foreach ($blueBar['itemBar'] as $item)
                         <li>
                             <img src="{{ Vite::asset($item['icon']) }}" alt="">
                             <span class="title">{{$item['title']}}</span>
@@ -44,6 +44,7 @@
             </div>
         </section>
     </main>
+    @include('partials.footer')
 
 
 </body>

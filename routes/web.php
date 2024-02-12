@@ -14,29 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = [
-        'blueBar' => [
-            [
-                'icon' => 'resources/img/buy-comics-digital-comics.png',
-                'title' => 'DIGITAL COMICS',
-            ],
-            [
-                'icon' => 'resources/img/buy-comics-merchandise.png',
-                'title' => 'DC MERCHANDISE',
-            ],
-            [
-                'icon' => 'resources/img/buy-comics-subscriptions.png',
-                'title' => 'SUBSCRIPTIONS',
-            ],
-            [
-                'icon' => 'resources/img/buy-comics-shop-locator.png',
-                'title' => 'COMIC SHOP LOCATOR',
-            ],
-            [
-                'icon' => 'resources/img/buy-dc-power-visa.svg',
-                'title' => 'DC POWER VISA',
-            ]
-        ]
-    ];
-    return view('comics', $data);
+    $footerArr = config('footer_arr');
+    $blueBar = config('blue_bar');
+    return view('comics', compact('footerArr', 'blueBar'));
 });
