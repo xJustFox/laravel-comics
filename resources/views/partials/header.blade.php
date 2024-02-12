@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <ul class="d-flex justify-content-end  list-unstyled m-0 ">
                         <li class="px-2 "><a href="#">DC POWER&#8480; VISA&reg; </a></li>
-                        <li class="px-2 "><a href="#">COMICS</a></li>
+                        <li class="px-2 "><a href="#">ADDITIONAL DC SITES</a></li>
                     </ul>
                 </div>
             </div>
