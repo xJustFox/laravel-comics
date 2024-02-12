@@ -26,15 +26,9 @@
             <!-- Menù -->
             <div class="col">
                 <ul class="d-flex list-unstyled m-0 ">
-                    <li class="px-2 "><a href="#">CHARACTERS</a></li>
-                    <li class="px-2 "><a href="#">COMICS</a></li>
-                    <li class="px-2 "><a href="#">MOVIES</a></li>
-                    <li class="px-2 "><a href="#">TV</a></li>
-                    <li class="px-2 "><a href="#">GAMES</a></li>
-                    <li class="px-2 "><a href="#">VIDEOS</a></li>
-                    <li class="px-2 "><a href="#">FANS</a></li>
-                    <li class="px-2 "><a href="#">NEWS</a></li>
-                    <li class="px-2 "><a href="#">SHOP</a></li>
+                    @foreach ($navLinks['links'] as $link)
+                        <li class="px-2 "><a href="{{$link['href']}}">{{$link['name']}}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </nav>

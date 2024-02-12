@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $footerArr = config('footer_arr');
     $blueBar = config('blue_bar');
-    return view('comics', compact('footerArr', 'blueBar'));
+    $navLinks = config('nav_links');
+    return view('comics', compact('footerArr', 'blueBar', 'navLinks'));
 });
