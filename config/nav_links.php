@@ -3,47 +3,47 @@ return [
     'links' => [
         [
             'name' => "CHARACTERS",
-            'href' => "#",
+            'href' => "characters",
         ],
         [
             'name' => "COMICS",
-            'href' => "#",
+            'href' => "comics",
         ],
         [
             'name' => "MOVIES",
-            'href' => "#",
+            'href' => "movies",
         ],
         [
             'name' => "TV",
-            'href' => "#",
+            'href' => "tv",
         ],
         [
             'name' => "GAMES",
-            'href' => "#",
+            'href' => "games",
         ],
         [
             'name' => "COLLECTIBLES",
-            'href' => "#",
+            'href' => "collectibles",
         ],
         [
             'name' => "GAMES",
-            'href' => "#",
+            'href' => "games",
         ],
         [
             'name' => "VIDEOS",
-            'href' => "#",
+            'href' => "videos",
         ],
         [
             'name' => "FANS",
-            'href' => "#",
+            'href' => "fans",
         ],
         [
             'name' => "NEWS",
-            'href' => "#",
+            'href' => "news",
         ],
         [
             'name' => "SHOP",
-            'href' => "#",
+            'href' => "shop",
         ],
     ]
 ];

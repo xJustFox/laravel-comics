@@ -18,7 +18,7 @@
 
             <!-- Logo -->
             <div class="col">
-                <a href="#">
+                <a href="{{'home'}}">
                     <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="Logo">
                 </a>
             </div>
@@ -27,7 +27,9 @@
             <div class="col">
                 <ul class="d-flex list-unstyled m-0 ">
                     @foreach ($navLinks['links'] as $link)
-                        <li class="px-2 "><a href="{{$link['href']}}">{{$link['name']}}</a></li>
+                        <li class="px-2 ">
+                            <a href="{{$link['href']}}" class="{{Route::currentRouteName() === $link['href'] ? 'active' : ''}}">{{$link['name']}}</a>
+                        </li>
                     @endforeach
                 </ul>
             </div>
