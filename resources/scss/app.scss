@@ -141,8 +141,23 @@ main {
     }
 
     .detailesMain {
-        background: linear-gradient(0deg, rgba(255,255,255,1) 80%, rgba(2,130,249,1) 80%);
-        height: 400px;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 90%, rgba(2,130,249,1) 80px);
+
+        .my-pt-24{
+            padding-top: 24px;
+        }
+
+        .my-pl-0{
+            padding-left: 0;
+        }
+
+        .my-pr-0{
+            padding-right: 0;
+        }
+
+        .text-blue{
+            color: #003f5e;
+        }
 
         .my-container{
             position: relative;
@@ -154,6 +169,16 @@ main {
                 top: -225px;
                 width: 180px;
                 height: 290px;
+            }
+
+            .box-left, .box-right{
+                background-color: #55ba59;
+                padding: 10px;
+                border: 1px solid black;
+
+                .text-light-green{
+                    color: #9af999;
+                }
             }
         }
     }
