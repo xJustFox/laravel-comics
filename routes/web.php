@@ -14,21 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $footerArr = config('footer_arr');
     $navLinks = config('nav_links');
+    $footerArr = config('footer_arr');
     return view('home', compact('footerArr', 'navLinks'));
 })->name('home');
 
 Route::get('/comics', function () {
-    $footerArr = config('footer_arr');
-    $blueBar = config('blue_bar');
     $navLinks = config('nav_links');
+    $blueBar = config('blue_bar');
+    $footerArr = config('footer_arr');
     $comics = config('comics');
     return view('comics', compact('footerArr', 'blueBar', 'navLinks', 'comics'));
 })->name('comics');
 
 Route::get('/movies', function () {
-    $footerArr = config('footer_arr');
     $navLinks = config('nav_links');
+    $footerArr = config('footer_arr');
     return view('movies', compact('footerArr','navLinks'));
 })->name('movies');
