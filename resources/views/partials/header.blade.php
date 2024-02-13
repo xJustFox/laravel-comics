@@ -18,7 +18,7 @@
 
             <!-- Logo -->
             <div class="col">
-                <a href="{{'home'}}">
+                <a href="{{route('home')}}">
                     <img src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="Logo">
                 </a>
             </div>

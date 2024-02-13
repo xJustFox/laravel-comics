@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
     $footerArr = config('footer_arr');
     $navLinks = config('nav_links');
     return view('home', compact('footerArr', 'navLinks'));

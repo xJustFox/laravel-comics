@@ -18,8 +18,9 @@
 <body>
     @include('partials.header')
     @include('partials.jumbo')
-    <main class=" text-center py-3 ">
-        <img src="https://www.clipartmax.com/png/full/265-2655834_work-in-progress-icon.png" alt="">
+    <main class=" text-center py-5 ">
+        <h2 class="text-white">Works in progress...</h2>
+        <img class=" w-25 " src="{{Vite::asset('resources/img/pngwing.com.png')}}" alt="">
     </main>
     @include('partials.footer')
 

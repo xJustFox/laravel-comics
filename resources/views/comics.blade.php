@@ -12,7 +12,6 @@
 
     <!-- Styles -->
     @vite('resources/js/app.js')
-    @vite('resources/js/comics.js')
 
 </head>
 
