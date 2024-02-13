@@ -32,3 +32,19 @@ Route::get('/movies', function () {
     $footerArr = config('footer_arr');
     return view('movies', compact('footerArr','navLinks'));
 })->name('movies');
+
+Route::get('/{param}', function($param){
+    $navLinks = config('nav_links');
+    $footerArr = config('footer_arr');
+    $comics = config('comics');
+
+    
+    $comic = null;
+    foreach ($comics as $item) {
+        if ($item['id'] == $param) {
+            $comic = $item;
+        }
+    }
+
+    return view('detailes_comic', compact('footerArr', 'navLinks', 'comic'));
+})->name('detailes_comic');

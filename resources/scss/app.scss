@@ -1,37 +1,40 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-header{
-    .info-blue-box{
+header {
+    .info-blue-box {
         background-color: #0282f9;
-        li:first-child a{
+
+        li:first-child a {
             padding-right: 50px;
         }
-        li a{
+
+        li a {
             color: #fff;
             font-weight: 600;
             text-decoration: none;
             font-size: small;
         }
     }
-    nav{
+
+    nav {
         img {
             height: 80px;
         }
-    
-        li a{
+
+        li a {
             color: #000;
             font-weight: 600;
             position: relative;
             text-decoration: none;
             font-size: larger;
-    
+
             &.active,
-            &:hover{
+            &:hover {
                 color: #0282f9;
                 cursor: pointer;
-    
-                &::after{
+
+                &::after {
                     content: "";
                     position: absolute;
                     bottom: -43px;
@@ -41,179 +44,202 @@ header{
                     background-color: #0282f9;
                 }
             }
-    
+
         }
     }
 }
 
-.jumbo{
+.jumbo {
     height: 400px;
     background-image: url('../img/jumbotron.jpg');
     background-size: cover;
 }
 
-main{
+main {
     background-color: #1c1c1c;
 
+    .comicsMain {
+        .my-p {
+            padding: 50px 0px 15px 0px;
+        }
 
-    .my-p{
-        padding: 50px 0px 15px 0px;
-    }
-    .plate{
-        position: absolute;
-        bottom: 97%;
-        cursor: default;
-        background-color: #0282f9;
-        color: #fff;
-        font-size: large;
-        font-weight: 900;
-        padding: 8px 25px;
-    }
+        .plate {
+            position: absolute;
+            bottom: 97%;
+            cursor: default;
+            background-color: #0282f9;
+            color: #fff;
+            font-size: large;
+            font-weight: 900;
+            padding: 8px 25px;
+        }
 
-    .my-row{
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px 5px;
+        .my-row {
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px 5px;
 
-        
-    }
 
-    .my-btn{
-        background-color: #0282f9;
-        border: 0;
-        padding: 5px 40px;
-        color: #fff;
-        font-weight: 600;
-        font-size: small;
+        }
 
-        &:hover{
-            transform:scale(1.1);
+        .my-btn {
+            background-color: #0282f9;
+            border: 0;
+            padding: 5px 40px;
+            color: #fff;
+            font-weight: 600;
+            font-size: small;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .my-col {
+            width: calc(100% / 6 - 10px);
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+
+                img {
+                    transform: scale(1.1);
+                }
+
+            }
+
+            .imgContainer {
+                height: 220px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .price {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                padding: 5px;
+                border-radius: 10px 0 0 10px;
+                background-color: rgba(57, 56, 56, 0.9);
+                color: white;
+            }
+
+            .textComics {
+                padding: 10px 0;
+                color: white;
+                font-size: small;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
         }
     }
 
-    .my-col {
-        width: calc(100% / 6 - 10px);
-        position: relative;
+    .detailesMain {
+        background: linear-gradient(0deg, rgba(255,255,255,1) 80%, rgba(2,130,249,1) 80%);
+        height: 400px;
 
+        .my-container{
+            position: relative;
+            padding-top: 130px;
+
+            .card-comic{
+                border: 1px solid white;
+                position: absolute;
+                top: -225px;
+                width: 180px;
+                height: 290px;
+            }
+        }
+    }
+}
+
+.shippingBanner {
+    background-color: #0282f9;
+    color: #fff;
+
+    li {
         &:hover {
             cursor: pointer;
 
-            img{
-                transform: scale(1.1);
-            }
-
-        }
-        
-        .imgContainer {
-            height: 220px;
-            overflow: hidden;
-            
             img {
-                width: 100%;
-            }
-        }
-        .price{
-            position: absolute;
-            top: 10px;
-            right: 0;
-            padding: 5px;
-            border-radius: 10px 0 0 10px;
-            background-color: rgba(57, 56, 56, 0.9);
-            color: white;
-        }
-        
-        .textComics {
-            padding: 10px 0;
-            color: white;
-            font-size: small;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-    }
-
-}
-
-.shippingBanner{
-    background-color: #0282f9;
-    color: #fff;
-    li{
-        &:hover{
-            cursor: pointer;
-
-            img{
                 transform: scale(1.1);
             }
         }
 
-        img{
+        img {
             height: 50px;
         }
 
-        .title{
+        .title {
             font-size: smaller;
             padding: 0 10px;
         }
     }
 }
 
-footer{
+footer {
     background-image: url("../img/footer-bg.jpg");
     background-size: cover;
 
-    .content{
+    .content {
         height: 450px;
         padding: 50px 0;
     }
-    .title{
+
+    .title {
         cursor: default;
         color: #fff;
         font-size: 30px;
         font-weight: bolder;
     }
 
-    .infoItems{
+    .infoItems {
         text-decoration: none;
         color: #878484fa;
 
-        &:hover{
+        &:hover {
             color: #0282f9;
             cursor: pointer;
         }
     }
 
-    .log-bg{
+    .log-bg {
         position: relative;
         bottom: 30%;
     }
 
-    .my-bg-black{
+    .my-bg-black {
         background-color: #303030;
 
-        .my-btn{
+        .my-btn {
             border: 2px solid #0282f9;
             border-radius: 0;
 
-            &:hover{
-                transform:scale(1.1);
+            &:hover {
+                transform: scale(1.1);
             }
         }
 
-        ul{
-            li:first-child{
+        ul {
+            li:first-child {
                 cursor: default;
                 font-weight: bolder;
                 color: #0282f9;
             }
 
-            li{
-               padding: 0 10px;
-           }
+            li {
+                padding: 0 10px;
+            }
 
-           .socialIcon:hover{
-            transform: scale(1.1);
-           }
+            .socialIcon:hover {
+                transform: scale(1.1);
+            }
 
         }
     }
