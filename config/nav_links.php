@@ -26,10 +26,6 @@ return [
             'href' => "collectibles",
         ],
         [
-            'name' => "GAMES",
-            'href' => "games",
-        ],
-        [
             'name' => "VIDEOS",
             'href' => "videos",
         ],
